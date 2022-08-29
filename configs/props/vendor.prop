@@ -278,6 +278,11 @@ persist.vendor.sensors.enable.rt_task=false
 persist.vendor.sensors.hal_trigger_ssr=false
 persist.vendor.sensors.support_direct_channel=false
 
+# Suspend properties
+suspend.short_suspend_threshold_millis=2000
+suspend.short_suspend_backoff_enabled=true
+suspend.max_sleep_time_millis=40000
+
 # Thermal
 vendor.sys.thermal.data.path=/data/vendor/thermal/
 
