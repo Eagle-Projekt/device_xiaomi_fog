@@ -1,6 +1,9 @@
 # DPM
 persist.vendor.dpm.feature=11
 
+# Radio
+persist.vendor.qti.telephony.vt_cam_interface=2
+
 # Telephony
 ro.telephony.sim_slots.count=2
 telephony.active_modems.max_count=2
