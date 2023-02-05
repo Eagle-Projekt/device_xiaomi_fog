@@ -1,0 +1,6 @@
+runtime_resource_overlay {
+    name: "SettingsProviderOverlayFog",
+    theme: "SettingsProviderOverlayFog",
+    sdk_version: "current",
+    vendor: true,
+}
