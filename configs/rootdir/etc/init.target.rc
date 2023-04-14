@@ -149,13 +149,7 @@ on boot
     start mi_thermald
     start vendor.sensors
 
-    # Enable ZRAM on boot_complete
-on property:sys.boot_completed=1
-    rm /data/unencrypted/zram_swap
-    swapon_all /vendor/etc/fstab.qcom
-    write /proc/sys/vm/swappiness 100
-
-    # Load WLAN driver
+   # Load WLAN driver
     insmod /vendor/lib/modules/qca_cld3_wlan.ko
 
     # ADD VIB chmod
@@ -252,3 +246,9 @@ on post-fs-data
     mkdir /data/vendor/nfc/param 0777 nfc nfc
     chmod 0660 /dev/pn553
     chown nfc nfc /dev/pn553
+
+   # Enable ZRAM on boot_complete
+on property:sys.boot_completed=1  
+    rm /data/unencrypted/zram_swap
+    swapon_all /vendor/etc/fstab.qcom
+    write /proc/sys/vm/swappiness 100
