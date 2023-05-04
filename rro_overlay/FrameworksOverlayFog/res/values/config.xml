@@ -776,4 +776,8 @@
 
     <!-- Whether device has a notch -->
     <bool name="config_haveNotch">true</bool>
+    
+    <!-- Boost Framework -->
+    <bool name="config_supportsBoostFramework">true</bool>
+
 </resources>
