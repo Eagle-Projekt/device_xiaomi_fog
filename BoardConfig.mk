@@ -160,7 +160,7 @@ BOARD_SUPER_PARTITION_GROUPS := qti_dynamic_partitions
 BOARD_QTI_DYNAMIC_PARTITIONS_PARTITION_LIST := odm system system_ext product vendor
 BOARD_QTI_DYNAMIC_PARTITIONS_SIZE := 9122611200 # BOARD_SUPER_PARTITION_SIZE - 4MB
 
-ifneq ($(WITH_GMS),true)
+ifneq ($(TARGET_BUILD_GAPPS),true)
 BOARD_PRODUCTIMAGE_EXTFS_INODE_COUNT := -1
 BOARD_PRODUCTIMAGE_PARTITION_RESERVED_SIZE := 1258291200
 BOARD_SYSTEMIMAGE_EXTFS_INODE_COUNT := -1
@@ -221,7 +221,7 @@ ENABLE_VENDOR_RIL_SERVICE := true
 VENDOR_SECURITY_PATCH := 2023-03-01
 
 # Sepolicy
-include device/qcom/sepolicy_vndr-legacy-um/SEPolicy.mk
+include device/qcom/sepolicy_vndr/SEPolicy.mk
 
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
 SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/public
@@ -258,4 +258,3 @@ QC_WIFI_HIDL_FEATURE_DUAL_AP := true
 
 # Inherit from the proprietary version
 include vendor/xiaomi/fog/BoardConfigVendor.mk
-
