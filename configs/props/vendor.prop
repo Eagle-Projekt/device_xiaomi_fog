@@ -230,9 +230,6 @@ persist.vendor.dpmhalservice.enable=1
 # FRP
 ro.frp.pst=/dev/block/bootdevice/by-name/frp
 
-# FS-verity
-ro.apk_verity.mode=2
-
 # Graphics
 debug.sdm.support_writeback=0
 debug.sf.disable_client_composition_cache=1
