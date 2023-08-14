@@ -18,9 +18,9 @@
      for different hardware and product builds.  Do not translate. -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-     <!-- Flag indicating whether the we should enable the automatic brightness in Settings.
+    <!-- Flag indicating whether the we should enable the automatic brightness in Settings.
          Software implementation will be used if config_hardware_auto_brightness_available is not set -->
-     <bool name="config_automatic_brightness_available">true</bool>
+    <bool name="config_automatic_brightness_available">true</bool>
 
     <!-- True if the display hardware only has brightness buckets rather than a full range of
          backlight values -->
@@ -32,6 +32,9 @@
     <!-- Control whether the always on display mode is enabled by default. This value will be used
          during initialization when the setting is still null. -->
     <bool name="config_dozeAlwaysOnEnabled">false</bool>
+
+    <!-- Auto-brightness sensor type string -->
+    <string name="config_displayLightSensorType">"android.sensor.light"</string>
 
     <!-- Power Management: Specifies whether to decouple the interactive state of the
          device from the display on/off state.
