@@ -56,6 +56,9 @@
 
     <!-- For Enabling Battery Heath -->
     <bool name="config_supportBatteryHealth">true</bool>
+ 
+    <!-- Whether to show the Preference for Adaptive connectivity -->
+    <bool name="config_show_adaptive_connectivity">false</bool>
 
     <!-- Battery Health -->
     <string name="config_batDesCap">/sys/class/power_supply/bms/charge_full_design</string>
