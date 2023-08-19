@@ -753,6 +753,8 @@
         <item>com.android.camera</item>
         <item>com.google.camera</item>
         <item>com.xiaomi.cameratest</item>
+	<item>org.lineageos.aperture</item>
+        <item>org.lineageos.aperture.dev</item>
     </string-array>
 
     <!-- Whether device has a notch -->
