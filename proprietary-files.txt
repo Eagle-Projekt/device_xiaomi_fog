@@ -968,7 +968,6 @@ vendor/etc/lm/PreKillFeature.xml
 vendor/etc/lm/prekill/prekill_2GB.data
 vendor/etc/lm/prekill/prekill_4GB.data
 vendor/etc/lm/prekill/prekill_6GB.data
-vendor/etc/powerhint.xml
 
 # Perf configs - from LA.VENDOR.1.0.r1-16000-WAIPIO.QSSI13.0
 vendor/etc/perf/commonresourceconfigs.xml|70f678c8e1a81be6251b384eef998a0aaa911dbd
