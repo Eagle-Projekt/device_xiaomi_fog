@@ -172,6 +172,7 @@ ro.surface_flinger.set_idle_timer_ms=500
 ro.surface_flinger.set_touch_timer_ms=800
 ro.surface_flinger.use_color_management=true
 ro.surface_flinger.wcg_composition_dataspace=143261696
+service.sf.prime_shader_cache=0
 vendor.display.camera_noc_efficiency_factor=0.70
 vendor.display.comp_mask=0
 vendor.display.disable_excl_rect=0
