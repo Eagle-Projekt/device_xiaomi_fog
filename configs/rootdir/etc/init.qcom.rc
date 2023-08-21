@@ -78,7 +78,6 @@ on early-boot
     write /sys/kernel/boot_adsp/boot 1
     write /sys/kernel/boot_cdsp/boot 1
     write /sys/devices/virtual/npu/msm_npu/boot 1
-    write /sys/devices/virtual/cvp/cvp/boot 1
     exec u:r:vendor_qti_init_shell:s0 -- /vendor/bin/init.qcom.early_boot.sh
 
     write /sys/class/drm/card0-DSI-1/status "detect"
@@ -443,6 +442,7 @@ on property:sys.boot_completed=1
     #Reinit lmkd to reconfigure lmkd properties
     setprop lmkd.reinit 1
     chown media audio /sys/kernel/aud_dev/state
+    write /sys/devices/virtual/cvp/cvp/boot 1
 
 on property:persist.vendor.radio.atfwd.start=false
     stop vendor.atfwd
