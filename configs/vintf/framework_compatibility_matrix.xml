@@ -818,4 +818,19 @@
             <instance>default</instance>
         </interface>
     </hal>
+    <hal format="aidl" optional="true">
+        <name>android.hardware.vibrator</name>
+        <interface>
+            <name>IVibrator</name>
+            <instance>default</instance>
+        </interface>
+    </hal>    
+    <hal format="hidl" optional="true">
+        <name>vendor.qti.memory.pasrmanager</name>
+        <version>1.0-1</version>
+        <interface>
+            <name>IPasrManager</name>
+            <instance>pasrhal</instance>
+        </interface>
+    </hal>
 </compatibility-matrix>
